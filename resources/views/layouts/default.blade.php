@@ -16,11 +16,11 @@ dir="{{ Helper::determineLanguageDirection() }}">
 
 
     <link rel="apple-touch-icon"
-          href="{{ ($snipeSettings) && ($snipeSettings->favicon!='') ?  Storage::disk('public')->url(e($snipeSettings->logo)) :  config('app.url').'/img/snipe-logo-bug.png' }}">
+          href="{{ ($snipeSettings) && ($snipeSettings->favicon!='') ?  Storage::disk('public')->url(e($snipeSettings->logo)) :  config('app.url').'/img/app-logo.png' }}">
     <link rel="apple-touch-startup-image"
-          href="{{ ($snipeSettings) && ($snipeSettings->favicon!='') ?  Storage::disk('public')->url(e($snipeSettings->logo)) :  config('app.url').'/img/snipe-logo-bug.png' }}">
+          href="{{ ($snipeSettings) && ($snipeSettings->favicon!='') ?  Storage::disk('public')->url(e($snipeSettings->logo)) :  config('app.url').'/img/app-logo.png' }}">
     <link rel="shortcut icon" type="image/ico"
-          href="{{ ($snipeSettings) && ($snipeSettings->favicon!='') ?  Storage::disk('public')->url(e($snipeSettings->favicon)) : config('app.url').'/favicon.ico' }} ">
+          href="{{ ($snipeSettings) && ($snipeSettings->favicon!='') ?  Storage::disk('public')->url(e($snipeSettings->favicon)) : config('app.url').'/img/app-logo.png' }} ">
 
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -885,7 +885,6 @@ dir="{{ Helper::determineLanguageDirection() }}">
                                 <div class="pull-right">
                                     @yield('header_right')
                                 </div>
-
                         </div>
                     </div>
                 </section>
@@ -915,7 +914,7 @@ dir="{{ Helper::determineLanguageDirection() }}">
                 </section>
 
             </div><!-- /.content-wrapper -->
-            <footer class="main-footer hidden-print" style="display:grid;flex-direction:column;">
+            <!-- <footer class="main-footer hidden-print" style="display:grid;flex-direction:column;">
 
                 <div class="1hidden-xs pull-left">
                     <div class="pull-left" >
@@ -953,7 +952,7 @@ dir="{{ Helper::determineLanguageDirection() }}">
                         </div>
                     @endif
                 </div>
-            </footer>
+            </footer> -->
         </div><!-- ./wrapper -->
 
 
@@ -985,7 +984,7 @@ dir="{{ Helper::determineLanguageDirection() }}">
 
 
         <div class="modal modal-warning fade" id="restoreConfirmModal" tabindex="-1" role="dialog"
-             aria-labelledby="confirmModalLabel" aria-hidden="true">
+            aria-labelledby="confirmModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1087,9 +1086,8 @@ dir="{{ Helper::determineLanguageDirection() }}">
                     // ClipboardJS can't copy display:none elements so use a trick to hide the value
                     document.getElementById(targetElement).style.fontSize = "0px";
                     document.getElementById(hiddenElement).style.display = "";
-
-                 }
-             }
+                }
+            }
 
             $(function () {
 

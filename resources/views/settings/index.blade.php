@@ -335,19 +335,20 @@
 
 
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-12">
-    <div class="box box-default">
-      <div class="box-header">
+    <div class="box box-default"> -->
+      <!-- <div class="box-header">
         <h2 class="box-title">{{ trans('admin/settings/general.system') }}</h2>
-      </div>
-      <div class="box-body">
+      </div> -->
+      <!-- <div class="box-body">
         <div class="col-md-12" style="margin-right:4px;">
-        <div class="row row-new-striped" style="line-height: 23px;">
+        <div class="row row-new-striped" style="line-height: 23px;"> -->
 
           <!-- row -->
-          <div class="row">
-            <div class="col-md-2" style="padding-top: 3px; padding-bottom: 3px;">
+          <!-- <div class="row">
+            <div class="col-md-2" 
+            style="padding-top: 3px; padding-bottom: 3px;">
               <strong>{{ trans('admin/settings/general.snipe_version') }}:</strong>
             </div>
             <div class="col-md-4" style="padding-top: 3px; padding-bottom: 3px;">
@@ -359,12 +360,12 @@
             </div>
             <div class="col-md-4" style="padding-top: 3px; padding-bottom: 3px;">
               <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" rel="noopener">AGPL3</a>
-           </div>
-          </div>
+            </div>
+          </div> -->
           <!-- / row -->
 
           <!-- row -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-md-2" style="padding-top: 3px; padding-bottom: 3px;">
               <strong>{{ trans('admin/settings/general.php') }}:</strong>
             </div>
@@ -378,10 +379,10 @@
             <div class="col-md-4" style="padding-top: 3px; padding-bottom: 3px;">
               {{ $snipeSettings->lar_ver() }}
             </div>
-          </div>
+          </div> -->
 
           <!-- row -->
-          <div class="row">
+          <!-- <div class="row">
               <div class="col-md-2" style="padding-top: 3px; padding-bottom: 3px;">
                 <strong>{{ trans('admin/settings/general.timezone') }}:</strong>
               </div>
@@ -395,10 +396,10 @@
               <div class="col-md-4" style="padding-top: 3px; padding-bottom: 3px;">
                 {{ config('database.default') }}
               </div>
-          </div>
+          </div> -->
 
           <!-- row -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-md-2" style="padding-top: 3px; padding-bottom: 3px;">
               <strong>{{ trans('admin/settings/general.mail_from') }}:</strong>
             </div>
@@ -414,10 +415,10 @@
               {{ config('mail.reply_to.name') }}
               <code>&lt;{{ config('mail.reply_to.address') }}&gt;</code>
             </div>
-          </div>
+          </div> -->
 
           <!-- row -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-md-2" style="padding-top: 3px; padding-bottom: 3px;">
               <strong>{{ trans('admin/settings/general.bs_table_storage') }}:</strong>
             </div>
@@ -431,11 +432,11 @@
           </div>
         </div>
         </div>
-          </div>
+          </div> -->
           <!--/ row -->
-        </div>
-      </div> <!-- /box-body-->
-    </div> <!--/box-default-->
+    <!--</div>-->
+  <!--</div>--> <!-- /box-body-->
+<!--</div>--> <!--/box-default-->
 
 
 
